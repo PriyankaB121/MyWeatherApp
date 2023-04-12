@@ -29,9 +29,6 @@ public interface OpenWeatherMapService {
     @GET(CURRENT)
     Call<CurrentWeather> getCurrentWeatherByZipCode(@QueryMap Map<String, String> options);
 
-    //Current Weather Endpoints end
-
-    //Three hour forecast endpoints start
     @GET(FORECAST)
     Call<ThreeHourForecast> getThreeHourForecastByCityName(@QueryMap Map<String, String> options);
 

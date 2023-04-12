@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
     TextView tv;
-     AppCompatTextView tvMinmax,tvHumidity,tvPressure,tvWind,tvTemp,tvTempDetails;
+     AppCompatTextView tvMinmax,tvHumidity,tvPressure,tvWind,tvTemp,tvTempDetails,tvAddress;
      AppCompatImageView imageViewWeather;
     SearchView search_view;
     OpenWeatherMapHelper helper;
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         tv=findViewById(R.id.tv);
         tvTemp=findViewById(R.id.tvTemp);
         tvTempDetails=findViewById(R.id.tvTempDetails);
+        tvAddress=findViewById(R.id.tvAddress);
         tvMinmax=findViewById(R.id.tvMinmax);
         tvHumidity=findViewById(R.id.tvHumidity);
         tvPressure=findViewById(R.id.tvPressure);
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         helper.setUnits(Units.IMPERIAL);
         helper.setLanguage(Languages.ENGLISH);
         tv.setVisibility(View.GONE);
-        weather("INDIA");
+        weather("USA");
         search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -71,14 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 tvMinmax.setText(""+currentWeather.getMain().getTempMin()+"/"+currentWeather.getMain().getTempMax());
                 tvTemp.setText(""+currentWeather.getMain().getTempMax());
                 tvTempDetails.setText(""+currentWeather.getWeather().get(0).getDescription());
+                tvAddress.setText(""+ currentWeather.getName()+ ", " + currentWeather.getSys().getCountry());
                 setDescriptionAgId(String.valueOf(currentWeather.getWeather().get(0).getId()));
-                Log.v(TAG,
-                        "Coordinates: " + currentWeather.getCoord().getLat() + ", "+currentWeather.getCoord().getLon() +"\n"
-                                +"Weather Description: " + currentWeather.getWeather().get(0).getDescription() + "\n"
-                                +"Temperature: " + currentWeather.getMain().getTempMax()+"\n"
-                                +"Wind Speed: " + currentWeather.getWind().getSpeed() + "\n"
-                                +"City, Country: " + currentWeather.getName() + ", " + currentWeather.getSys().getCountry()
-                );
+
             }
 
             @Override
