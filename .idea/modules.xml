@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Weather.iml" filepath="$PROJECT_DIR$/.idea/modules/Weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.iml" filepath="$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.main.iml" filepath="$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/openweathermaphelper/Weather.openweathermaphelper.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Weather.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Weather.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Weather.sample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Weather.sample.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Weather.sample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Weather.sample.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Weather.sample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Weather.sample.unitTest.iml" />
+    </modules>
+  </component>
+</project>

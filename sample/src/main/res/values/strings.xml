@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OpenWeatherMap</string>
+    <string name="OPEN_WEATHER_MAP_API_KEY">f63af5e4778e517ec5e7599d6172eae5</string>
+    <string name="txt_humidity">Humidity</string>
+    <string name="txt_colon">:</string>
+    <string name="txt_minmax">Min/Max</string>
+    <string name="temp">Temperature</string>
+    <string name="txt_wind_speed">Wind Speed</string>
+    <string name="air_pressure">Pressure</string>
+    <string name="txt_pressure">Pressure</string>
+</resources>
